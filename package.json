@@ -1,0 +1,22 @@
+{
+  "name": "mocha-intro",
+  "version": "1.0.0",
+  "description": "Intro to TDD with mocha and chai",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fx-wood/mocha-intro.git"
+  },
+  "author": "FX",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fx-wood/mocha-intro/issues"
+  },
+  "homepage": "https://github.com/fx-wood/mocha-intro#readme",
+  "devDependencies": {
+    "chai": "^4.2.0"
+  }
+}
