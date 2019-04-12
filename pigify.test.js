@@ -1,11 +1,18 @@
 const assert = require('assert');
+const pigify = require('../pigify');
 
-describe('Our first Mocha Test', function() {
-    it('length prop should be the length of the string', function() {
-        assert.equal('javascript'.length, 5);
-    });
-    it('charAt(0) should return first char of the string', function() {
-        assert.equal("javascript".charAt(0), 'j');
+describe('Pig Latin Translator', function() {
+    it('should return a string', function() {
+        assert.equal(typeof pigify('test'), 'string');
+    })
+    it('should return a string ending in "ay"', function() {
+        var result = pigify('test');
+        assert.equal( result.slice(result.length -2), 'ay')
+    })
+    it('should return a string that starts with a vowel', function() {
+        var result = pigify('test');
+        var vowels = ['a', 'e', 'i', 'o', 'u']
+        assert.equal(vowels.includes(result[0]), true)
     });
     
 })
